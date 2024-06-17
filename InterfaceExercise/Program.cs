@@ -37,7 +37,39 @@ namespace InterfaceExercise
 
             //Now, create objects of your 3 classes and give their members values.
             //Creatively display and organize their values
-            
+            Car civic = new Car();
+            civic.Name = "Civic";
+            civic.Year = "2018";
+            civic.Miles = 2000;
+            civic.IsElectric = false;
+            civic.CompanyName = "Honda";
+            civic.CompanyMotto = "Power of Dreams";
+            civic.HasTrunk = true;
+            civic.IsAutomatic = true;
+
+            Truck f150 = new Truck();
+            f150.Name = "F-150";
+            f150.Year = "2024";
+            f150.Miles = 500;
+            f150.IsElectric = true;
+            f150.CompanyName = "Ford";
+            f150.CompanyMotto = "Built Ford Tough";
+            f150.IsWorkVehicle = false;
+            f150.BedIsCovered = false;
+
+            SUV forester = new SUV();
+            forester.Name = "Forester";
+            forester.Year = "2019";
+            forester.Miles = 4000;
+            forester.IsElectric = false;
+            forester.CompanyName = "Subaru";
+            forester.CompanyMotto = "Love. It's What Makes a Subaru, a Subaru";
+            forester.NumberOfSeats = 4;
+            forester.HasRearCameras = true;
+
+            civic.DisplayDetails();
+            f150.DisplayDetails();
+            forester.DisplayDetails();
             //Option for displaying values: 
             //Create a stubbed out method called DisplayDetails in your IVehicle interface.
             //Implement the stubbed out method in the derived classes.
